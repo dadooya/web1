@@ -18,6 +18,12 @@
                 font-size:75px;
                 text-align:center;
             }
+            .red{
+                color:red;
+            }
+            #blue{
+                color:blue;
+            }
         </style>
         <h1>css</h1>
         (h1)font-size:75px;<br>text-align:center;<br><br>
@@ -31,7 +37,15 @@
         <ol>
             <li>li</li>
             <li>li</li>
-            <li style="color:red">li(red)</li>
+            <li style="color:red">li(style="color:red")</li>
+        </ol>
+        style(.red{<br>
+            color:red;<br>
+        })
+        <ol>
+            <li>li</li>
+            <li class="red">li(class=red)</li>
+            <li class="red" id="blue">li(class=red id=blue)</li>
         </ol>
 
         a{text-decoration:none;}
