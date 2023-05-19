@@ -3,9 +3,6 @@
     <head>
         <title>web1.2css</title>
         <meta charset="utf-8">
-        
-    </head>
-    <body>
         <style>
             li {
                 color:blue;
@@ -24,7 +21,45 @@
             #blue{
                 color:blue;
             }
+            #border-span{
+                border-width: 5px;
+                border-color:red;
+                border-style:solid;
+            }
+            #border-h1{
+                border-width:5px;
+                border-color:red;
+                border-style:solid;
+                
+            }
+            #border-h1-inline{
+                border-width:5px;
+                border-color:red;
+                border-style:solid;
+                display: inline;
+            }
+            .padding{
+                border:5px solid red;
+                padding:10px;
+            }
+            .padding2{
+                border:5px solid red;
+                padding:10px;
+                margin:0;
+                
+            }
+            .gridtest{
+                border:5px solid red;
+            }
+            #grid{
+                border:5px solid grey;
+                display:grid;
+                grid-template-columns: 150px 1fr;
+            }
         </style>
+    </head>
+    <body>
+        
         <h1>css</h1>
         (h1)font-size:75px;<br>text-align:center;<br><br>
             
@@ -39,20 +74,48 @@
             <li>li</li>
             <li style="color:red">li(style="color:red")</li>
         </ol>
-        style(.red{<br>
+        style(<br>.red{<br>
             color:red;<br>
-        }
-        #blue{
-            생략
+        }<br>
+        #blue{<br>
+            생략<br>
         })
         <ol>
             <li>li</li>
             <li class="red">li(class=red)</li>
             <li class="red" id="blue">li(class=red id=blue)</li>
         </ol>
+        <h2>box model</h2>
+        <img src="imgs\htmlboxmodel.jpg" width="50%">
+        <h1 id="border-h1">h1test</h1>
+        <span id="border-span">spantest</span><br>
+        
+        border-width: 5px;<br>
+        border-color:red;<br>
+        border-style:solid;<br>->border:5px solid red<br>
+        <h1 id="border-h1-inline">h1test2</h1><br>
+        display:inline;<br><br>
+        <h1 class="padding">padding</h1><br><br>
+        <h1 class="padding">padding2</h1><br><br>
+        padding:10px;<br><br>
+        <h1 class="padding2">padding</h1><br><br>
+        <h1 class="padding2">padding2</h1><br><br>
+        margin:0;<br>
+        <span style="border-bottom:1px solid red;">border-bottom</span>
+        <br><br>
+        <h2>grid</h2>
+        <div id="grid">
+            <div class="gridtest">navigation</div>
+            <div class="gridtest">article</div>
+        </div>
+        <p>display:grid;<br>
+        grid-template-columns: 150px 1fr;</p>
+        <a href="test1.html" title="이동">반응형 웹</a><br>
+        <p>link rel="stylesheet" href="--.css"</p>
 
-        a{text-decoration:none;}
+
+        <br>a{text-decoration:none;}
         <p><a href="1.html" title="link">html으로</a><br>
-        <a href="3.html" title="link">3번으로</a></p>
+        <a href="3.html" title="link">javascript로</a></p>
     </body>
 </html>
