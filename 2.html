@@ -56,6 +56,17 @@
                 display:grid;
                 grid-template-columns: 150px 1fr;
             }
+            @media(min-width:800px){
+                #min800 {
+                    display:none;
+                }
+            }
+            @media(max-width:800px){
+                #max800 {
+                    display:none;
+                }
+            }
+        
         </style>
     </head>
     <body>
@@ -110,7 +121,24 @@
         </div>
         <p>display:grid;<br>
         grid-template-columns: 150px 1fr;</p>
-        <a href="test1.html" title="이동">반응형 웹</a><span><--click</span><br>
+        반응형 웹<br>
+        
+        
+        <div id="min800">@media(min-width:800px){
+        div{
+        display:none;
+        }
+        }</div>
+        <p>
+            코드는 가로기준 화면크기가 800픽셀 이하만 보임
+        </p>
+        <div id="max800">@media(max-width:800px){
+        #max800 {
+        display:none;
+        }
+        }
+        </div>
+        <p>코드는 가로기준 화면크기가 800픽셀 이상만 보임</p><br>
         <p>link rel="stylesheet" href="--.css"</p>
 
 
