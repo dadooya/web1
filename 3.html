@@ -110,6 +110,24 @@
             document.querySelector('#night_day')는자기자신을 가리키므로 this로 바꿀 수 있다.
             document.querySelector('body')는 반복되므로 변수에 저장해서 사용한다.
         </p>
+        <p>
+            js로 태그넣기
+            <script>
+                function addATag(){
+                    const aTag=document.createElement('a');
+                    aTag.setAttribute('href','https://www.w3.org/TR/2011/WD-html5-20110405/');
+                    aTag.setAttribute('target','_blank');
+                    //aTag.textContent='w3c';
+                    aTag.innerHTML='w3c';
+                    
+                    aTag.appendChild(document.getElementById('tag'));
+                    
+                    
+                }
+            </script>
+            <input id='tag' type=button value="add 'a' tag" onClick="addATag();">
+            
+        </p>
 
         
         
